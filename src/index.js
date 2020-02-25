@@ -7,7 +7,7 @@ if (module.hot) {
     console.log('22222');
   })
 }
-console.log('33333')
+console.log('env', process.env.NODE_ENV, process.env.aaa, process.env)
 function component() {
   var element = document.createElement('div')
   var btn = document.createElement('button')

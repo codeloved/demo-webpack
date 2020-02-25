@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.config.js",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
     "server": "node ./webpackMiddle/server.js",
-    "build": "webpack --config ./webpack/webpack.config.js",
-    "watch": "webpack --watch --config ./webpack/webpack.config.js"
+    "build": "webpack --config ./webpack/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -19,12 +18,14 @@
     "express": "^4.17.1",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.9.0",
     "webpack-manifest-plugin": "^2.2.0",
+    "webpack-merge": "^4.2.2",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
