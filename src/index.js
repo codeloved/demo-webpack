@@ -1,13 +1,15 @@
 import './index.css'
 import printMe from './print'
+import _ from 'lodash'
 
+console.log(_)
 if (module.hot) {
   console.log('111111')
   module.hot.accept('./print.js', function() {
     console.log('22222');
   })
 }
-console.log('env', process.env.NODE_ENV, process.env.aaa, process.env)
+console.log('env', process.env.zdy)
 function component() {
   var element = document.createElement('div')
   var btn = document.createElement('button')
